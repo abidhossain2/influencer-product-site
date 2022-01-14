@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Open+Sans&family=Roboto+Slab&family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+/*----------- header style start------------ */
+
+header{
+    height: 162px;
+}
+
+nav{
+    width: 300px;
+    display: inline-block;
+    margin: 66px 102px;
+}
+
+nav h1{
+    font-size: 29px;
+    color: #03203C;
+    font-weight: bold;
+}
+
+/*----------- header style end------------ */
+
+/*----------- heading section style start------- */
+.heading{
+    height: 600px;    
+    display: flex;
+    justify-content: space-around;
+}
+.headingTitle{
+    width: 647px;
+    height: 451px;
+}
+
+.headingTitle h1{
+    font-size: 65px;
+    display: block;
+    margin: 88px 0px 0px;
+    color: #03203C;;
+}
+
+.headingTitle p{
+    line-height: 35px;
+    display: block;
+    margin: 15px 0px;
+}
+
+.headingTitle a{
+    padding: 12px 31px;
+    display: block;
+    width: 130px;
+    border-radius: 25px;
+    background-color: #03203C;
+    color: papayawhip;
+}
+
+.headingTitle a span{
+    margin-left: 13px;
+}
+.headingImg{
+    width: 490px;
+    height: 490px;
+    background-image: url("images/Circle\ design.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headingImg img{
+    margin: 27px;
+}
+
+/*----------- heading section style end------- */
+
+
+/*----------- product section style start------- */
+
+.totalProducts{
+    height: 1610px;
+}
+.title{
+    height: 87px;
+    width: 237px;
+    margin:auto;
+    color: #03203C;
+}
+
+.title h1{
+    font-size: 29px;
+}
+
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 26px;
+    justify-items: center;
+}
+
+article{
+    background: white;
+    width: 302px;
+    height: 437px;
+    padding: 11px;
+    border-radius: 4px;
+    box-shadow: -1px -1px 10px 0px powderblue;
+}
+
+.productImg{
+    overflow: hidden;
+}
+.productImg img{
+    transition: transform 0.8s;
+}
+.productImg img:hover{
+    transform: scale(1.1);
+}
+
+.productInfo h3{
+    font-size: 27px;
+}
+
+.productInfo p{
+    /* font-size: 23px; */
+    font-weight: bold;
+    margin-top: 13px;
+}
+
+.totalRating{
+    display: flex;
+    align-items: center;
+}
+
+.star{
+    color: yellowgreen;
+    font-size: 12px;
+}
+.rating{
+    width: 150px;
+    padding: 8px 0px;
+}
+
+.rate{
+    width: 150px;
+    padding: 1px 0px;
+    margin-bottom: 11px;
+}
+
+.rate p{
+    font-size: 14px;
+}
+
+.feature p{
+   color: #03203C;
+}
+
+.link{
+    width: 200px;
+    float: right;
+    margin-top: 26px;
+    padding: 9px;
+}
+
+.link a{
+    color: #03203C;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.link span{
+    margin-left: 20px;
+}
+
+
+/*--------------- product section style end--------------- */
