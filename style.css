@@ -26,10 +26,17 @@ nav{
     margin: 66px 102px;
 }
 
-@media (max-width:768px) {
+@media (max-width:992px) {
     nav{
         display: block;
         margin: 100px 192px;
+    }
+}
+
+@media (max-width:688px) {
+    nav{
+        display: block;
+        margin: 100px 140px;
     }
 }
 
@@ -53,7 +60,7 @@ nav h1{
 }
 
 .headingTitle h1{
-    font-size: 65px;
+    font-size: 60px;
     display: block;
     margin: 88px 0px 0px;
     color: #03203C;;
@@ -90,7 +97,7 @@ nav h1{
 }
 
 
-@media (max-width:768px) {
+@media (max-width:992px) {
     .heading{
         flex-direction: column-reverse;
         margin-top: 180px;
@@ -126,6 +133,43 @@ nav h1{
         padding: 18px 14px;
     }
 }
+
+@media (max-width:688px) {
+    .heading{
+        flex-direction: column-reverse;
+        margin-top: 180px;
+    }
+
+    .headingImg{
+        margin-top: 192px;
+        margin-left: 99px;
+        background-size: contain;
+    }
+
+    .headingTitle{
+        margin-bottom: 374px;
+        margin-left: 12px;
+        text-align: center;
+        margin-top: 46px;
+    }
+
+    .headingTitle h1{
+        margin: 0;
+    }
+
+    .headingTitle p{
+        font-size: 27px;
+        margin-right: -18px;
+    }
+    .headingTitle a{
+        margin-right: -8px;
+        display: inline-block;
+        border-radius: 49px;
+        font-size: 25px;
+        width: 203px;
+        padding: 32px 33px;
+    }
+}
 /*----------- heading section style end------- */
 
 
@@ -146,7 +190,7 @@ nav h1{
 }
 
 
-@media (max-width:768px) {
+@media (max-width:992px) {
     
     .title{
         display: block;
@@ -160,6 +204,19 @@ nav h1{
     }
 }
 
+@media (max-width:688px) {
+    
+    .title{
+        display: block;
+        margin-left:187px;
+        margin-top: 185px;
+        width: 346px;
+    }
+
+    .title h1{
+        font-size: 42px;
+    }
+}
 .products{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -176,7 +233,7 @@ article{
     box-shadow: -1px -1px 10px 0px powderblue;
 }
 
-@media (max-width:768px) {
+@media (max-width:992px) {
     .products{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -186,6 +243,16 @@ article{
     }
 }
 
+@media (max-width:688px) {
+    .products{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 32px;
+    }
+    article{
+        margin-left: 190px;
+    }
+}
 .productImg{
     overflow: hidden;
 }
@@ -201,7 +268,6 @@ article{
 }
 
 .productInfo p{
-    /* font-size: 23px; */
     font-weight: bold;
     margin-top: 13px;
 }
@@ -252,10 +318,18 @@ article{
     margin-left: 20px;
 }
 
-@media (max-width:768px) {
+@media (max-width:992px) {
     .link{
         position: relative;
         left: -520px;
+    }
+}
+
+@media (max-width:688px) {
+    .link{
+        position: relative;
+        left: 175px;
+        top: 3px;
     }
 }
 
@@ -264,11 +338,16 @@ article{
 /*--------------- Accessories section style start-------------- */
 
 .accessories{
-    height: 300px;
+    height: 587px;
     margin-top: 92px;
     margin-bottom:36px;
 }
 
+@media (max-width:688px) {
+    .accessories{
+        width: 100%;
+    }
+}
 .vloggingProduct{
     display: flex;
     justify-content: space-evenly;
@@ -284,13 +363,25 @@ article{
     border-radius: 7px;
 }
 
-@media (max-width:768px) {
+@media (max-width:992px) {
     .vloggingProduct{
         margin-top: 1000px;
     }
     .vloggingImg img{
         width: 300px;
         margin-left: 21px;
+    }
+}
+
+@media (max-width:688px) {
+    .vloggingProduct{
+        margin-top: 3000px;
+        flex-direction: column-reverse;
+    }
+    .vloggingImg img{
+        width: 100%;
+        margin-left: 178px;
+        margin-top: 22px;
     }
 }
 .vlogInfo{
@@ -323,7 +414,7 @@ article{
 }
 
 
-@media (max-width:768px) {
+@media (max-width:992px) {
 
     .vlogInfo h1{
         font-size: 24px;
@@ -340,55 +431,93 @@ article{
         margin-left: 65px;
     }
 }
+
+@media (max-width:688px) {
+    .vlogInfo{
+        margin-left: 97px;
+        text-align: center;
+    }
+    .vlogInfo h1{
+        font-size: 32px;
+        margin-left: 64px;
+    }
+
+    .vlogInfo p{
+        font-size: 19px;
+        margin-left: 66px;
+    }
+
+    .vlogInfo a{
+        margin-top: -9px;
+        margin-left: 65px;
+        padding: 20px 49px;
+        font-size: 23px;
+    }
+}
 /*--------------- Accessories section style end-------------- */
 
 
 /*-------------- footer section style start------------------ */
 
 footer{
-    height: 200px;
+    padding: 0 50%;
+    height: 192px;
+    color: papayawhip;
     background-color: #242B2E;
 }
 
-.endSection{
-    width: 500px;
+@media (max-width:688px) {
+    footer{
+        padding: 0 100%;
+    }
+}
+
+.container{
+    width: 400px;
+    height: 185px;
+    display: block;
+    margin: 0px -188px;
     text-align: center;
-    margin: auto;
 }
 
-.endSection h3{
+.container h3{
+    font-size: 26px;
+    margin-top: 25px;
     display: inline-block;
-    font-size: 25px;
-    margin-bottom: 13px;
-    margin-top: 34px;
-    color: papayawhip;
 }
 
-.endSection p{
-    margin-bottom: 7px;
-    line-height: 29px;
-    font-size: 12px;
-    color: papayawhip;
+.copyright{
+    margin-top: 13px;
+    margin-bottom: -19px;
+}
+
+.copyright p{
+    font-size: 13px;
+    line-height: 28px;
 }
 
 .socialMedia{
-    display: flex;
-    justify-content: center;
+    height: 50px;
+    margin-top: 31px;
+}
+.socialMedia ul li{
+    display: inline;
 }
 
-.socialIcon{
+.socialMedia ul li a{
     border: 1px solid papayawhip;
-    width: 34px;
-    height: 34px;
+    display: inline-block;
     border-radius: 50%;
-    margin-right: 17px;
+    padding: 8px;
+    margin-right: 10px;
+    color: papayawhip;
 }
 
-.social{
-    color: papayawhip;
-    font-size: 19px;
-    padding: 7px;
+.socialMedia ul li a i{
+    font-size: 20px;
 }
+
+
 /*-------------- footer section style end------------------ */
 
 
