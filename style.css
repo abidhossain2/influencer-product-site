@@ -338,7 +338,7 @@ article{
 /*--------------- Accessories section style start-------------- */
 
 .accessories{
-    height: 587px;
+    height: 343px;
     margin-top: 92px;
     margin-bottom:36px;
 }
@@ -511,8 +511,13 @@ footer{
     padding: 8px;
     margin-right: 10px;
     color: papayawhip;
+    transition: all 0.8s;
 }
 
+.socialMedia ul li a:hover{
+    background-color: papayawhip;
+    color: #03203C;
+}
 .socialMedia ul li a i{
     font-size: 20px;
 }
